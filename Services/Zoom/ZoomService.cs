@@ -450,7 +450,7 @@ namespace zoom_custom_ui_wpf.Services.Zoom
         {
             // Video
             var videoSettings = ZOOM_SDK_DOTNET_WRAP.CZoomSDKeDotNetWrap.Instance.GetSettingServiceWrap().GetVideoSettings();
-            videoSettings.EnableHardwareEncode(settings.HardwareEncode);
+            videoSettings.EnableHardwareEncode(settings.HardwareEncode, VideoHardwareEncodeType.VIDEO_HARDWARE_ENCODE_PROCESSING);
             videoSettings.EnableVideoMirrorEffect(settings.VideoMirrorEffect);
             
             // Audio
